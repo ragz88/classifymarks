@@ -25,6 +25,18 @@ class TestExclude(unittest.TestCase):
         students = classify.thoseInRange(self.data, 5, 25)        
         self.assertListEqual(students, ["none"])
 
+    def test_thoseInRange3(self):
+        students = classify.thoseInRange(self.data, 0, 45)        
+        self.assertListEqual(students, ["student0"])
+
+    def test_thoseInRange4(self):
+        students = classify.thoseInRange(self.data, 85, 100)        
+        self.assertListEqual(students, ["student85", "student99"])
+
+    def test_thoseInRange4(self):
+        students = classify.thoseInRange(self.data, 45, 45)        
+        self.assertListEqual(students, ["none"])
+
     def tearDown(self):
         del self.data
         
