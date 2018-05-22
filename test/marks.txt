@@ -1,0 +1,12 @@
+student45	45
+student55	55
+student60	60
+student65	65
+student69	69
+student70	70
+student75	75
+student79	79
+student85	85
+student99	99
+student0	0
+student100	100
