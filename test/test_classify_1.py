@@ -33,7 +33,7 @@ class TestExclude(unittest.TestCase):
         students = classify.thoseInRange(self.data, 85, 100)        
         self.assertListEqual(students, ["student85", "student99"])
 
-    def test_thoseInRange4(self):
+    def test_thoseInRange5(self):
         students = classify.thoseInRange(self.data, 45, 45)        
         self.assertListEqual(students, ["none"])
 
